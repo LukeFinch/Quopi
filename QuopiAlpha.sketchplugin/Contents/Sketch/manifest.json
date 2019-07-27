@@ -30,19 +30,19 @@
     }
   ],
   "menu": {
-    "title": "💬✏️ Quopi alpha",
+    "title": "Quopi alpha 💬✏️ ",
     "items": [
       "abstract-api",
       "set-token",
       "set-copy-prefix"
     ]
   },
-  "version": "0.1.0",
+  "version": "0.2.1",
   "description": "Fetches copy from the comments on your Abstract branch",
   "name": "Quopi",
   "identifier": "Quopi",
   "disableCocoaScriptPreprocessor": true,
-  "appcast": "https://raw.githubusercontent.com/LukeFinch/PluginDev/tree/master/AbstractAPIPlugin/master/.appcast.xml",
+  "appcast": "https://raw.githubusercontent.com/LukeFinch/Quopi/master/.appcast.xml",
   "author": "Luke Finch",
   "authorEmail": "lukechristianfinch@gmail.com"
 }
