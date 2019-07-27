@@ -1,0 +1,35 @@
+{
+  "name": "Quopi",
+  "description": "Fetches copy from the comments on your Abstract branch",
+  "version": "0.2.0",
+  "repository": {
+    "url": "https://github.com/LukeFinch/Quopi"
+  },
+  "engines": {
+    "sketch": ">=49.0"
+  },
+  "skpm": {
+    "name": "Quopi",
+    "manifest": "src/manifest.json",
+    "main": "QuopiAlpha.sketchplugin",
+    "assets": [
+      "assets/**/*"
+    ],
+    "sketch-assets-file": "sketch-assets/icons.sketch"
+  },
+  "scripts": {
+    "build": "skpm-build",
+    "watch": "skpm-build --watch",
+    "start": "skpm-build --watch --run",
+    "postinstall": "npm run build && skpm-link"
+  },
+  "devDependencies": {
+    "@skpm/builder": "^0.7.0"
+  },
+  "author": "Luke Finch <lukechristianfinch@gmail.com>",
+  "dependencies": {
+    "abstract-sdk": "^1.7.1",
+    "babel-polyfill": "^6.26.0",
+    "skpm": "^1.2.1"
+  }
+}
