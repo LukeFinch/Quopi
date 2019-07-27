@@ -1,0 +1,40 @@
+{
+  "$schema": "https://raw.githubusercontent.com/BohemianCoding/SketchAPI/develop/docs/sketch-plugin-manifest-schema.json",
+  "icon": "icon.png",
+  "commands": [
+    {
+      "script": "my-command.js",
+      "shortcut": "",
+      "name": "Fetch Copy for Artboard(s)",
+      "description": "Select one or more artboard, and fetch comments for copy changes",
+      "icon": "icons/logo.png",
+      "identifier": "abstract-api"
+    },
+    {
+      "script": "Settings.js",
+      "shortcut": "",
+      "name": "Set Token",
+      "description": "Set the token for the abstract API",
+      "icon": "icons/logo.png",
+      "identifier": "set-token",
+      "handler": "setApiToken"
+    },
+    {
+      "script": "Settings.js",
+      "shortcut": "",
+      "name": "Set Copy Prefix",
+      "description": "Set the prefix for copywriters to use",
+      "icon": "icons/logo.png",
+      "identifier": "set-copy-prefix",
+      "handler": "setCopyPrefix"
+    }
+  ],
+  "menu": {
+    "title": "💬✏️ Quopi alpha",
+    "items": [
+      "abstract-api",
+      "set-token",
+      "set-copy-prefix"
+    ]
+  }
+}
